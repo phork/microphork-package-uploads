@@ -1,0 +1,13 @@
+{
+    "name": "microphork/package-uploads",
+    "description": "A file uploader package for the microphork framework",
+    "type": "microphork-package",
+    "require": {
+        "microphork/package-installer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phork\\Pkg\\Uploads\\": "classes"
+        }
+    }
+}
