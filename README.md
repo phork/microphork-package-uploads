@@ -23,7 +23,7 @@ This is a file uploader package for the microphork framework. It validates and s
 //load and alias a new uploads package
 \Phork::instance()->initPackage('Uploads', (
     function($result, $type) {
-        class_alias(sprintf('\\Phork\\%s\\Uploads', $type), 'PhorkUploads');
+        class_alias(sprintf('\\Phork\\%s\\Uploads\\Uploads', $type), 'PhorkUploads');
     }
 ));
 
