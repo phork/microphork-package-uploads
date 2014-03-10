@@ -1,5 +1,5 @@
 <?php
-    namespace Phork\Pkg;
+    namespace Phork\Pkg\Uploads;
 
     /**
      * The uploads class handles files uploaded via POST and has some 
