@@ -8,6 +8,8 @@
 
 This is a file uploader package for the microphork framework. It validates and saves files uploaded via POST.
 
+To extend this package create a `\Phork\App\Uploads` class in the `app/classes` folder.
+
 
 ##Usage
 
