@@ -21,11 +21,7 @@ This is a file uploader package for the microphork framework. It validates and s
 ');
 
 //load and alias a new uploads package
-\Phork::instance()->initPackage('Uploads', (
-    function($result, $type) {
-        class_alias(sprintf('\\Phork\\%s\\Uploads\\Uploads', $type), 'PhorkUploads');
-    }
-));
+class_alias(\Phork::instance()->initPackage('Uploads'), 'PhorkUploads');
 
 //if a file was uploaded then save it
 if (\Phork::router()->getMethod() == 'post' && $files = \PhorkUploads::getFiles()) {
