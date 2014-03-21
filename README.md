@@ -1,9 +1,3 @@
-#microphork
-
-* [By Phork Labs](http://phorklabs.com/)
-* Version: 0.1
-
-
 ##Introduction
 
 This is a file uploader package for the microphork framework. It validates and saves files uploaded via POST.
@@ -34,6 +28,11 @@ if (\Phork::router()->getMethod() == 'post' && $files = \PhorkUploads::getFiles(
     }
 }
 ```
+
+
+##Credits
+
+Built by [Elenor](http://elenor.net) at [Phork Labs](http://phorklabs.com).
 
 
 ##License
