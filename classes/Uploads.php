@@ -18,7 +18,7 @@
          * @return array The uploaded files array
          * @static
          */
-        static public function getFiles($uploaded = true)
+        public static function getFiles($uploaded = true)
         {
             $files = array();
 
@@ -48,7 +48,6 @@
 
             return $files;
         }
-        
 
         /**
          * Validates that the file upload was successful and returns
@@ -60,7 +59,7 @@
          * @return array The file data
          * @static
          */
-        static public function validateFile($file, $uploaded = true)
+        public static function validateFile($file, $uploaded = true)
         {
             if ($file['error']) {
                 switch ($file['error']) {
@@ -95,7 +94,6 @@
 
             return $file;
         }
-        
 
         /**
          * Moves the uploaded file from its temporary location to the
@@ -109,7 +107,7 @@
          * @return boolean True if the file was saved successfully
          * @static
          */
-        static public function saveFile($tempPath, $filePath, $overwrite = false)
+        public static function saveFile($tempPath, $filePath, $overwrite = false)
         {
             if (!empty($filePath)) {
                 if (($overwrite == true && is_file($filePath)) || !file_exists($filePath)) {
