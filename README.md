@@ -1,11 +1,11 @@
-##Introduction
+## Introduction
 
 This is a file uploader package for the microphork framework. It validates and saves files uploaded via POST.
 
 To extend this package create a `\Phork\App\Uploads` class in the `app/classes` folder.
 
 
-##Usage
+## Usage
 
 ```
 //print a simple upload form
@@ -30,12 +30,12 @@ if (\Phork::router()->getMethod() == 'post' && $files = \PhorkUploads::getFiles(
 ```
 
 
-##Credits
+## Credits
 
-Built by [Elenor](http://elenor.net) at [Phork Labs](http://phorklabs.com).
+Built by [Elenor](http://elenor.net) at [Phork Labs](http://phork.org).
 
 
-##License
+## License
 
 Licensed under The MIT License
 <http://www.opensource.org/licenses/mit-license.php>
